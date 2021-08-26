@@ -1,6 +1,6 @@
 <ol>
   <li *ngFor="let item of list;let i=index" >
-  <div [ngClass]="'redcolor'" *ngIf="i%2==0; else bluecolor">  
+  <div [ngClass]="'redcolor'" *ngIf="i%2===0; else bluecolor">  
     {{item.name}}
   </div>
   <ng-template #bluecolor>
